@@ -14,10 +14,5 @@ test.describe('POPUP WINDOW accept', () =>{
         page.on('dialog',el=>el.dismiss())
         await  page.locator('#confirmbtn').click()
     })
-
-    
-
-
-
 })
     
