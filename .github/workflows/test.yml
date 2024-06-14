@@ -5,14 +5,14 @@ on:
     branches: [develop,master] 
   pull_request:
     branches: [develop,master] 
-    
+
 jobs:   
   test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
-      - uses: action/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
       - name: Install dependencies
