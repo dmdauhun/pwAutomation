@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 test.describe('assertion', () => {
 
     test('asserth', async ({ page }) => {
-        test.use({viewport:{width:500,height:500}})
+        //test.use({viewport:{width:500,height:500}})
         await page.goto('https://www.lambdatest.com/')
         const title = await page.title()
         console.log(title)
