@@ -2,7 +2,7 @@ import {test as it } from 'playwright/test';
 import {DatePicker} from '../../page_object/DatePicker'
 
 
-it.describe.only('Date picker',()=>{
+it.describe('Date picker',()=>{
     it('working with date picker',async ({page})=>{
 
         let datePicker=new DatePicker(page)
