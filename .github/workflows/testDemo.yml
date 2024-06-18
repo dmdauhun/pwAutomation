@@ -42,7 +42,7 @@ jobs:
       - name: Install dependecies
         run: npm ci --force
       - name: Install Playwright
-        run: npx playwright install -with-deps
+        run: npx playwright install --with-deps
       - name: Wait for localhost
         run: |
           npm run start &
@@ -62,7 +62,7 @@ jobs:
       - name: Install dependecies
         run: npm ci --force
       - name: Install Playwright
-        run: npx playwright install -with-deps
+        run: npx playwright install --with-deps
       - name: Run test
         run: npm run lambdaTest
 
