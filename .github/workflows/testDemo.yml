@@ -65,4 +65,4 @@ jobs:
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run test
-        run: npm run lambdaTest
+        run: npm run tests/lambdatest/datePicker.spec.ts
